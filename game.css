@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+.game--head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.again{
+    background-image: linear-gradient(to right, rgb(169, 252, 153),green);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.btwn{
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    
+}
+.GMN{
+    text-align: center;
+}
+.tog{
+    margin-top: 150px;
+}
+.line{
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+.Number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.num{ 
+    position: absolute;
+    background-color: rgb(109, 228, 149);
+    animation: GAME 5s linear infinite;
+    animation-play-state: running;
+    width: 180px;
+    height: 180px;
+    margin: -100px auto auto auto;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-radius: 50%;
+}
+/* #game--paused{
+    display: none;
+    align-items: center;
+    justify-content: center;
+} */
+/* .game--paused{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(119, 119, 119);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: absolute;
+    box-shadow: 5px 5px 20px 5px rgb(34, 34, 34);
+    border-radius: 20px;
+} */
+.paused{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /* height: 50vh; */
+}
+.pause{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(88, 255, 144);
+    color: rgb(0, 0, 0); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    position: absolute;
+    box-shadow: 5px 5px 20px 5px rgb(34, 34, 34);
+    border-radius: 20px;
+    top: 70px;
+}
+/* .close{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+.close button{
+    background-color: rgb(119, 119, 119);
+    top: 30px;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-size: 30px;
+    float: inline-start;
+} */
+@keyframes GAME {
+    25%{
+        background-color: rgb(126, 128, 0);
+    }
+    35%{
+        background-color: rgb(115, 180, 211);
+    }
+    45%{
+        background-color: rgb(0, 45, 128);
+    }
+    55%{
+        background-color: rgb(232, 184, 255);
+    }
+    65%{
+        background-color: rgb(224, 153, 195);
+    }
+    75%{
+        background-color: rgb(216, 175, 40);
+    }
+    85%{
+        background-color: rgb(143, 108, 108);
+    }
+    100%{
+        background-color: rgb(77, 4, 61);
+    }
+}
+.game--body{
+    margin: 70px 0px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input{
+    margin: 0px 0px 0px 30px;
+}
+input{
+    border: 2px solid white;
+    outline: none;
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+#check{
+    /* background-color: gray; */
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    margin: 30px 0px 0px 30px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(153, 245, 252),rgb(0, 128, 107));
+}
+#check:hover{
+    background-color: rgb(66, 65, 65);
+}
+.result{
+    margin: 0px 30px 0px 0px;
+}

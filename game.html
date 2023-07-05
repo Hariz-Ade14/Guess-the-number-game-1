@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+      <div class="game">
+             <div class="game--head">
+                  <button class="again">
+                       AGAIN!
+                  </button>
+                  <div class="btwn">
+                        <button id="pause">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                              <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </button>
+                       
+                  </div>
+             </div>
+             <h1 class="GMN">Guess My Number</h1>
+             <div class="tog">
+                     <div class="line"></div>
+                     <div class="Number">
+                        <div class="num">
+                            <h1 class="GNMV">?</h1>
+                        </div>
+                     </div>
+             </div>
+
+
+            
+             <div class="game--body">
+                    <div class="input">
+                         <input type="text" id="inp">
+                         <br>
+                         <button id="check">
+                            CHECK
+                         </button>
+                    </div>
+
+                    <div class="result">
+                         <h1 class="res">Start Guessing🤔...</h1>
+                         <br>
+                         <br>
+                         <br>
+                         <div class="SCORE" style="margin-left: 30px;">
+                            <h1>💯 Score: <span id="score">20</span></h1>
+                            <h1>💯 Highscore: <span id="highscore">0</span> </h1>
+                         </div>
+                         
+                    </div>
+             </div>
+      </div>
+
+      <div class="paused">  
+          <div class="pause">Paused</div>
+       </div>
+      
+      
+     <script src="game.js"></script>
+</body>
+</html>
